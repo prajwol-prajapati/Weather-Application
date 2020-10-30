@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import Forcast from './components/Forcast/Forcast';
 import SearchBar from './components/SearchBar/SearchBar';
-import ForcastWeekly from './components/forcast-weekly/forcast-weekly';
+import ForecastWeekly from './components/ForecastWeekly/ForecastWeekly';
 import axios from 'axios';
 
 import './App.css';
@@ -61,7 +61,7 @@ class App extends Component {
               <Forcast data={this.state.weatherData} unit={this.state.unit} />
             </div>
             <div className="day-section">
-              <ForcastWeekly></ForcastWeekly>
+              <ForecastWeekly></ForecastWeekly>
             </div>
             <div className="change-location">
               <SearchBar
