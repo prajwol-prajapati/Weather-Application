@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import Forcast from './components/Forcast/Forcast';
+import Forecast from './components/Forecast/Forecast';
 import SearchBar from './components/SearchBar/SearchBar';
 import ForecastWeekly from './components/ForecastWeekly/ForecastWeekly';
 import axios from 'axios';
@@ -58,7 +58,7 @@ class App extends Component {
         <div className="container">
           <div className="main d-flex flex-column">
             <div className="forecast-section">
-              <Forcast data={this.state.weatherData} unit={this.state.unit} />
+              <Forecast data={this.state.weatherData} unit={this.state.unit} />
             </div>
             <div className="day-section">
               <ForecastWeekly></ForecastWeekly>
